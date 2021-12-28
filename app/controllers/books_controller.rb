@@ -19,6 +19,7 @@ class BooksController < ApplicationController
   end
 
   def destroy
+    @book = Book.find(params[:id])
   end
 
   private
