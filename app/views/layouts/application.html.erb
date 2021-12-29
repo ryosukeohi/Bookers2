@@ -13,23 +13,6 @@
 
   <body>
 
-
-    <% if user_signed_in? %>
-      <li>
-        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-      </li>
-      <li>
-      <%= link_to 'マイページ', user_path(current_user.id) %>
-    </li>
-    <% else %>
-      <li>
-        <%= link_to "Sign up", new_user_registration_path %>
-      </li>
-      <li>
-        <%= link_to "Log in", new_user_session_path %>
-      </li>
-    <% end %>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Bookers</a>
@@ -45,10 +28,10 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/users/sign_in">Sign up</a>
+          <a class="nav-link" href="/users/sign_up">Sign up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Log in</a>
+          <a class="nav-link" href="/users/sign_in">Log in</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -58,6 +41,8 @@
   </div>
 </nav>
 
+
     <%= yield %>
+    <footer class="text-center mt-5">CopyRight Infratop.inc</footer>
   </body>
 </html>
