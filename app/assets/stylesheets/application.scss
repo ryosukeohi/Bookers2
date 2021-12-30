@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ .link {
+    text-decoration: none;
+    color: white ;
+}
+
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
