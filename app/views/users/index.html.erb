@@ -12,9 +12,9 @@
  <tbody>
  <% @users.each do |user| %>
  <tr>
-  <td></td>
-  <td><%= link_to book.title, "/books/#{book.id}" %></td>
+  <td><%= attachment_image_tag @user,:profile_image, :fill, 60, 60, fallback: "no_image.jpg"%></td>
   <td><%= user.name %></td>
+  <td><%= link_to "show", user_path(user.id) %></td>
  </tr>
  <% end %>
 </tbody>

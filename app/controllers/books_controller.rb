@@ -2,7 +2,7 @@ class BooksController < ApplicationController
 
   def new
     @book = Book.new
-    @user = User.find(params[:id])
+    @user = User.find(current_user.id)
   end
 
   def create
