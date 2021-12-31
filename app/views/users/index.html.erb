@@ -1,3 +1,10 @@
+<div class="container">
+ <div class="row">
+
+  <div class="col-lg-4">
+<%= render partial: 'books/new', locals: { book: @book, user: @user } %>
+  </div>
+<div class="col-lg-8">
 <h1>Users</h1>
 
 <table class="table table-striped">
@@ -10,7 +17,7 @@
  </thead>
 
  <tbody>
- <% @users.each do |user| %>
+ <% @user.each do |user| %>
  <tr>
   <td><%= attachment_image_tag @user,:profile_image, :fill, 60, 60, fallback: "no_image.jpg"%></td>
   <td><%= user.name %></td>
@@ -19,3 +26,6 @@
  <% end %>
 </tbody>
 </table>
+</div>
+</diV>
+</div>
