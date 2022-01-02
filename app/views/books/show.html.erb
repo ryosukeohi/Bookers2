@@ -18,8 +18,8 @@
   <td>
    <span><%= link_to @books.body, "/books/#{@books.id}" %></span>
   </td>
-  <td><%= link_to "Edit", edit_book_path(@books.id) %></td>
-  <td><%= link_to "Destroy", book_path(@books.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
+  <td><%= link_to "Edit", edit_book_path(@books.id), class:"btn btn-success" %></td>
+  <td><%= link_to "Destroy", book_path(@books.id), class:"btn btn-danger", method: :delete, "data-confirm" => "Are you sure?" %></td>
  </tr>
 </tbody>
 </table>
