@@ -1,3 +1,11 @@
+<div class="container">
+ <div class="row">
+
+<div class="col-lg-4">
+<%= render partial: 'books/new', locals: { book: @book, user: @user } %>
+  </div>
+
+<div class="col-lg-8">
 <h1>Book detail</h1>
 
 <table class="table">
@@ -5,13 +13,16 @@
  <tr>
    <td></td>
   <td>
-   <span><%= @book.title %></span>
+   <span><%= @books.title %></span>
   </td>
   <td>
-   <span><%= link_to @book.body, "/books/#{@book.id}" %></span>
+   <span><%= link_to @books.body, "/books/#{@books.id}" %></span>
   </td>
-  <td><%= link_to "Edit", edit_book_path(@book.id) %></td>
-  <td><%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
+  <td><%= link_to "Edit", edit_book_path(@books.id) %></td>
+  <td><%= link_to "Destroy", book_path(@books.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
  </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
