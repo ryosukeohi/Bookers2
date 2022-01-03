@@ -11,7 +11,7 @@
 <table class="table">
 <tbody>
  <tr>
-   <td></td>
+   <td><%= attachment_image_tag @book.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></td>
   <td>
    <span><%= @books.title %></span>
   </td>
