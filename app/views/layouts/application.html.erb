@@ -23,30 +23,30 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <% if signed_in? %>
-        <a class="nav-link active" aria-current="page"><%= link_to "Home", user_path(current_user.id), class: 'nav-link text-light' %></a>
+        <a class="nav-link active" aria-current="page"><%= link_to "Home", user_path(current_user.id), class: 'nav-link text-light fas fa-home' %></a>
           <% else %>
-        <a class="nav-link active" aria-current="page"><%= link_to "Home", root_path, class: 'nav-link text-light' %></a>
+        <a class="nav-link active" aria-current="page"><%= link_to "Home", root_path, class: 'nav-link text-light fas fa-home' %></a>
            <% end %>
         </li>
         <li class="nav-item">
           <% if signed_in? %>
-          <a class="nav-link text-light"><%= link_to "Users", users_path, class: 'nav-link text-light' %></a>
+          <a class="nav-link text-light"><%= link_to "Users", users_path, class: 'nav-link text-light fas fa-users' %></a>
           <% else %>
-          <a class="nav-link text-light"><%= link_to "About", about_path, class: 'nav-link text-light' %></a>
+          <a class="nav-link text-light"><%= link_to "About", about_path, class: 'nav-link text-light fas fa-link' %></a>
           <% end %>
         </li>
         <li class="nav-item">
           <% if signed_in? %>
-          <a class="nav-link text-light" ><%= link_to "Books", books_path, class: 'nav-link text-light' %></a>
+          <a class="nav-link text-light" ><%= link_to "Books", books_path, class: 'nav-link text-light fas fa-book' %></a>
           <% else %>
-          <a class="nav-link text-light"><%= link_to "Sign up", new_user_registration_path, class: 'nav-link text-light' %></a>
+          <a class="nav-link text-light"><%= link_to "Sign up", new_user_registration_path, class: 'nav-link text-light fas fa-user-plus' %></a>
           <% end %>
         </li>
         <li class="nav-item">
           <% if signed_in? %>
-          <a class="nav-link text-light"　data-methd="delete"><%= link_to "Log out", destroy_user_session_path, class: 'nav-link text-light' %></a>
+          <a class="nav-link text-light"　data-methd="delete"><%= link_to "Log out", destroy_user_session_path, class: 'nav-link text-light fas fa-sign-out-alt' %></a>
           <% else %>
-          <a class="nav-link"><%= link_to "Log in", new_user_session_path, class: 'nav-link text-light' %></a>
+          <a class="nav-link"><%= link_to "Log in", new_user_session_path, class: 'nav-link text-light fas fa-sign-in-alt' %></a>
           <% end %>
         </li>
       </ul>
