@@ -13,7 +13,6 @@
 
   <body>
 
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <span class="d-flex align-items-center"><a class="navbar-brand p-3"><%= link_to "Bookers", root_path, class: 'nav-link text-light' %></a></span>
@@ -54,6 +53,8 @@
     </div>
   </div>
 </nav>
+
+<%= render 'layouts/notifications' %>
 
 
     <%= yield %>
