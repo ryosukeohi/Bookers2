@@ -11,17 +11,19 @@
 <table class="table">
 <tbody>
  <tr>
-   <td>
-    <%= attachment_image_tag @book.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
-    </br><%= link_to @books.user.name, user_path(@books.user.id) %>
-    </td>
+  <td>
+    <%= link_to user_path(@books.user.id) do %>
+     <%= attachment_image_tag @books.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+     </br><%= @books.user.name %>
+    <% end %>
+  </td>
   <td>
    <span><%= @books.title %></span>
   </td>
   <td>
    <span><%= link_to @books.body, "/books/#{@books.id}" %></span>
   </td>
-  <% if @user.id == @books.user_id %>
+  <% if @user.id == current_user.id %>
   <td><%= link_to "Edit", edit_book_path(@books.id), class:"btn btn-success" %></td>
   <td><%= link_to "Destroy", book_path(@books.id), class:"btn btn-danger", method: :delete, "data-confirm" => "Are you sure?" %></td>
   <% end %>
