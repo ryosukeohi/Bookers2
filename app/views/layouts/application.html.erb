@@ -23,7 +23,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <% if signed_in? %>
-        <a class="nav-link active text-light fas fa-home" aria-current="page" href="/users/current_user.id">Home</a>
+        <a class="nav-link active text-light fas fa-home" aria-current="page" href="/users/#{current_user.id}">Home</a>
           <% else %>
         <a class="nav-link active text-light fas fa-home" aria-current="page" href="/">Home</a>
            <% end %>
@@ -55,8 +55,6 @@
 </nav>
 
 <%= render 'layouts/notifications' %>
-
-
     <%= yield %>
     <footer class="text-center mt-5">CopyRight Infratop.inc</footer>
   </body>
