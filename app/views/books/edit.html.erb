@@ -18,9 +18,9 @@
   <%= f.text_field :title %>
   <h4>Option</h4>
   <%= f.text_area :body %>
-  </br><button type="button　submit" class="btn btn-success">
-    　　Update Book
-    　　</button>
+  
+  </br><%= f.submit "Update Book", class: "btn btn-success" %>
+
 <% end %>
 <%= link_to "Show", book_path(@book.id) %>
 <%= link_to "Back", books_path %>
