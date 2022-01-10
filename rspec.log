@@ -238,7 +238,7 @@ Userモデルのテスト
 [32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
 [32m        他人の名前と紹介文が表示される[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 5)[0m
+[32m        他人のユーザ編集画面へのリンクが存在する[0m
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人の投稿編集画面
@@ -246,22 +246,22 @@ Userモデルのテスト
     他人のユーザ詳細画面のテスト
       表示の確認
 [32m        URLが正しい[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 6)[0m
+[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 5)[0m
 [32m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
 [32m        投稿一覧に他人の投稿のopinionが表示される[0m
 [32m        自分の投稿は表示されない[0m
       サイドバーの確認
 [32m        他人の名前と紹介文が表示される[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 7)[0m
+[32m        他人のユーザ編集画面へのリンクが存在する[0m
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人のユーザ情報編集画面
 [32m      遷移できず、自分のユーザ詳細画面にリダイレクトされる[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
-[31m    ユーザ一覧画面 (FAILED - 8)[0m
-[31m    ユーザ詳細画面 (FAILED - 9)[0m
-[31m    投稿一覧画面 (FAILED - 10)[0m
-[31m    投稿詳細画面 (FAILED - 11)[0m
+[31m    ユーザ一覧画面 (FAILED - 6)[0m
+[31m    ユーザ詳細画面 (FAILED - 7)[0m
+[31m    投稿一覧画面 (FAILED - 8)[0m
+[31m    投稿詳細画面 (FAILED - 9)[0m
   アイコンのテスト
     トップ画面
 [32m      本のアイコンが表示される[0m
@@ -278,90 +278,80 @@ Userモデルのテスト
 [32m      Booksリンクのアイコンが表示される[0m
 [32m      Log outリンクのアイコンが表示される[0m
     サイドバー
-[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 12)[0m
-[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 13)[0m
-[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 14)[0m
-[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 15)[0m
+[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 10)[0m
+[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 11)[0m
+[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 12)[0m
+[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 13)[0m
 
 Failures:
 
   1) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
      [31mFailure/Error: expect(page).to have_content 'New book'[0m
-     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname 4l20jwda6l introduction 1c3vill9pb7koma9xu3j\nNew Book\nTitle\nOption\nBooks\nTitle Option vnwma d0kxjwdoehtx40immqk7 7tdir i76cd51tiwum3mvi4oaw\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname h30qrox9bi introduction izyvfx7i3z07oo5uohf4\nNew Book\nTitle\nOption\nBooks\nTitle Option do7r5 3yo2czz6j05ym5kyr1ik e9m0d wot3p3loqou6xnd49ra4\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
      [36m# ./spec/system/02_after_login_spec.rb:73:in `block (4 levels) in <main>'[0m
 
   2) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
      [31mFailure/Error: expect(page).to have_content 'New book'[0m
-     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname knd15z6x5t introduction loapkwy560zxwq1etffu\nNew Book\nTitle\nOption\nBook detail\nknd15z6x5t dovdr kjm1f77109fn7tdgxthu Edit Destroy\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname 40u2mr0e7i introduction fnyn4gpqmy0dhcz80r25\nNew Book\nTitle\nOption\nBook detail\n40u2mr0e7i pmpe0 iwnzyeve8gepjmf39uiv Edit Destroy\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
      [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
   3) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
      [31mFailure/Error: expect(page).to have_content 'New book'[0m
-     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname r20u8dgr9c introduction msgmkge9qw5eb34no7vo\nNew Book\nTitle\nOption\nUsers\nimage name uqw3vopzus Show r20u8dgr9c Show\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname rc0rfatqj6 introduction 023h1dontgyudocw3t14\nNew Book\nTitle\nOption\nUsers\nimage name hnh5ravd8z Show rc0rfatqj6 Show\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
      [36m# ./spec/system/02_after_login_spec.rb:289:in `block (4 levels) in <main>'[0m
 
   4) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
      [31mFailure/Error: expect(page).to have_content 'New book'[0m
-     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname 5tkwjxp5v0 introduction 7n6py37j1ppbrrnil7ga\nNew Book\nTitle\nOption\nBooks\nTitle Option yy4gp g6b6jj7hbj4hkzf7ajxn\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+     [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname hybqugq32g introduction 2myydzjy91rkfs9q9ysv\nNew Book\nTitle\nOption\nBooks\nTitle Option vt9ze 7eznqey5dstrgnxhqsb1\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
      [36m# ./spec/system/02_after_login_spec.rb:343:in `block (4 levels) in <main>'[0m
 
-  5) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
-     [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
-
-  6) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  5) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
      [31mFailure/Error: expect(page).to have_link '', href: user_path(other_user)[0m
      [31m  expected to find link "" with href "/users/1" but there were no matches[0m
      [36m# ./spec/system/03_finishing_touches_spec.rb:277:in `block (5 levels) in <main>'[0m
 
-  7) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
-     [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:297:in `block (5 levels) in <main>'[0m
-
-  8) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
+  6) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-8.offset-md-1'[0m
      [31m  expected to find css ".container .row .col-md-8.offset-md-1" but there were no matches[0m
      [36m# ./spec/system/03_finishing_touches_spec.rb:330:in `block (3 levels) in <main>'[0m
 
-  9) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
+  7) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-8.offset-md-1'[0m
      [31m  expected to find css ".container .row .col-md-8.offset-md-1" but there were no matches[0m
      [36m# ./spec/system/03_finishing_touches_spec.rb:335:in `block (3 levels) in <main>'[0m
 
-  10) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
-      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-8.offset-md-1'[0m
-      [31m  expected to find css ".container .row .col-md-8.offset-md-1" but there were no matches[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:340:in `block (3 levels) in <main>'[0m
+  8) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
+     [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-8.offset-md-1'[0m
+     [31m  expected to find css ".container .row .col-md-8.offset-md-1" but there were no matches[0m
+     [36m# ./spec/system/03_finishing_touches_spec.rb:340:in `block (3 levels) in <main>'[0m
 
-  11) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
-      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-8.offset-md-1'[0m
-      [31m  expected to find css ".container .row .col-md-8.offset-md-1" but there were no matches[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:345:in `block (3 levels) in <main>'[0m
+  9) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
+     [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-8.offset-md-1'[0m
+     [31m  expected to find css ".container .row .col-md-8.offset-md-1" but there were no matches[0m
+     [36m# ./spec/system/03_finishing_touches_spec.rb:345:in `block (3 levels) in <main>'[0m
 
-  12) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
+  10) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
       [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-cog'[0m
       [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:431:in `block (4 levels) in <main>'[0m
 
-  13) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
+  11) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
       [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-cog'[0m
       [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:435:in `block (4 levels) in <main>'[0m
 
-  14) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
+  12) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
       [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-cog'[0m
       [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:439:in `block (4 levels) in <main>'[0m
 
-  15) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
+  13) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
       [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-cog'[0m
       [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:443:in `block (4 levels) in <main>'[0m
 
-Finished in 6.15 seconds (files took 1.06 seconds to load)
-[31m199 examples, 15 failures[0m
+Finished in 6.63 seconds (files took 1.09 seconds to load)
+[31m199 examples, 13 failures[0m
 
 Failed examples:
 
@@ -369,9 +359,7 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:145[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:288[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:342[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:247[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:276[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:296[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:327[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:332[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:337[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面[0m
