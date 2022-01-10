@@ -23,30 +23,30 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <% if signed_in? %>
-        <a class="nav-link active text-light fas fa-home" aria-current="page" href="/users/#{current_user.id}">Home</a>
+        <%= link_to 'Home', "/users/#{current_user.id}", class: 'nav-link active text-light fas fa-home' %>
           <% else %>
-        <a class="nav-link active text-light fas fa-home" aria-current="page" href="/">Home</a>
+        <%= link_to 'Home', "/", class: 'nav-link active text-light fas fa-home' %>
            <% end %>
         </li>
         <li class="nav-item">
           <% if signed_in? %>
-          <a class="nav-link text-light fas fa-users" href="/users">Users</a>
+          <%= link_to 'Users', "/users", class: 'nav-link text-light fas fa-users' %>
           <% else %>
-          <a class="nav-link text-light fas fa-link" href="/home/about">About</a>
+          <%= link_to 'About', "/home/about", class: 'nav-link text-light fas fa-link' %>
           <% end %>
         </li>
         <li class="nav-item">
           <% if signed_in? %>
-          <a class="nav-link text-light fas fa-book-open" href="/books">Books</a>
+          <%= link_to 'Books', "/books", class: 'nav-link text-light fas fa-book-open' %>
           <% else %>
-          <a class="nav-link text-light fas fa-user-plus" href="/users/sign_up">Sign up</a>
+          <%= link_to 'Sign up', "/users/sign_up", class: 'nav-link text-light fas fa-user-plus' %>
           <% end %>
         </li>
         <li class="nav-item">
           <% if signed_in? %>
-          <a class="nav-link text-light fas fa-sign-out-alt"　data-methd="delete" href="/users/sign_out">Log out</a>
+          <%= link_to 'Log out', "/users/sign_out", method: :get, class: 'nav-link text-light fas fa-sign-out-alt' %>
           <% else %>
-          <a class="nav-link text-light fas fa-sign-in-alt" href="/users/sign_in">Log in</a>
+          <%= link_to 'Log in', "/users/sign_in", class: 'nav-link text-light fas fa-sign-in-alt' %>
           <% end %>
         </li>
       </ul>

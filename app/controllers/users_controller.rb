@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :baria_user, only: [:edit, :update]
 
 
   def index
@@ -16,6 +15,9 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    if current_user != @user
+      redirect_to user_path(current_user.id)
+    end
   end
 
   def update
@@ -34,9 +36,5 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :profile_image, :introduction)
   end
 
-  def baria_user
-    unless User.find(params[:id]).id.to_i == current_user.id
-        redirect_to user_path(current_user)
-    end
-  end
+
 end
